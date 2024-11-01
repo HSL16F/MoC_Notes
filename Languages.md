@@ -1,0 +1,1 @@
+A language is simply defined as a set of strings

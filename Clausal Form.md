@@ -1,0 +1,1 @@
+CNF or Clausal Normal Form, used on logic and has one or more clauses
