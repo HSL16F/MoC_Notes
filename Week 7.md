@@ -1,1 +1,2 @@
-Focus is on [[Regular expression]]
+Focus is on [[Regular expression]] and introduced [[Pumping lemma]]
+

@@ -12,7 +12,17 @@ For the following CFL's:
 $C=\{a^mb^nc^n|m,n\geq0\}, D=\{a^nb^mc^m|m,n\geq0\}, C\cap D$ is not context free
 To prove that the intersection is not context free, use the [[Pumping lemma]] for context CFL's
 
-### Examples
+### Conversion of CDG to PDA
+![[Pasted image 20241101215340.png]]
+![[Pasted image 20241101215349.png]]
+
+
+## Pumping Lemma for CFL
+![[Pasted image 20241101222511.png]]
+![[Pasted image 20241101222524.png]]
+![[Pasted image 20241101222547.png]]
+
+## Examples
 When operating with grammars, they can be used to express numeric expressions. For example
 ![[Pasted image 20241012135033.png]]
 ![[Pasted image 20241012135041.png]]

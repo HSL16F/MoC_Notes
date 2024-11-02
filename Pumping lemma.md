@@ -8,3 +8,4 @@ Can use closure properties
 ## Pumping lemma for [[Context Free Languages]]
 ![[Pasted image 20241012140125.png]]
 ![[Pasted image 20241012140140.png]]
+To prove for CFL

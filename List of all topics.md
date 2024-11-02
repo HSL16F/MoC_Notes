@@ -5,6 +5,7 @@
 - [[NFA]]
 - [[GNFA]]
 - [[Turning Machines]]
+- [[Non Deterministic Turning Machines]]
 - [[Propositional logic and Syntax]]
 - [[Formal Language]]
 - [[Formal Proof]]
@@ -13,3 +14,4 @@
 - [[Context Free Languages]]
 - [[Proofs overview]]
 - [[Predicate Logic]]
+- 

@@ -24,3 +24,5 @@ $$
 OR statements are permitted in context free grammars, general rule is you use the first variable. In the case of parse trees, are used.
 Grammar is defined as ambiguous if and only iff there is two or more different parse trees for some given string.
 Often equivalent but unambiguous grammar can be found, but for every CFG for the following grammar is ambiguous $\{a^ib^jc^k|i=j\lor j=k\}$, such [[Context Free Languages|CFL's]] are ambiguous
+
+Regular Grammars generally correspond to regular languages, but CFG's can be of either form depending on how you restrict it.
