@@ -95,14 +95,27 @@ As in the propositional case, we have:
 ## Resolutions:
 Working towards bottom $\bot$ or contradiction, oppose to $\top$ or true
 A skolem function can be an arbitrary arity, eliminate some existential variables. Goal is to convert variables from predicate logic to [[Clausal Form]]
-Note that the conversion via the process of Skolemization does not produce logical equivalent formula. 
+Note that the conversion via the process of Skolemization does not produce logical equivalent formula.
+#### Unification
 In general, letters at start of alphabet are for constants, end of alphabet are for variables.
 Substitution of multiple variables an be performed with, for example $\theta=\{x_1\mapsto t_1, x_2\mapsto t_2,...,x_n\mapsto t_n\}$ and formula $E$, $E[\theta]$, replaces all occurrence of $x_i$ with $t_i$, for example $E$ is $P(f(x), g(y,y,b))$, $\theta=\{x\mapsto h(u), y\mapsto a, z\mapsto c\}\implies E[\theta]$ is $P(f(h(u)), g(a, a, b)$
 A unifier of two expressions $s$ and $t$ is a substitution of $\theta$ such that $s[\theta]=t[\theta]$, $s$ and $t$ are unifiable iff there exists a unifier for $s$ and $t$, for example, $L(x), L(c)$ unifiable for $L(x)[\theta], L(c)[\theta]$ are $L(c)$ for $\theta=\{x\mapsto c\}$
 $L(a)$ and $L(c)$ are not unifiable as they are constants, NOT variables.
+##### Unification algorithm
+For two expressions s and t, if they are unifiable, then they form a most general unifier (mgu) for s and t, else, results in failure.
+Start with set of questions {s=t}, as long as some equation has one of six forms, then perform the operations.
+###### Forms
+1. $F(s_1,...,s_n)=G(t_1,...,t_n)$, replace n equations with $s_1=t_1,...,s_n=t_n$
+2. $F(s_1,...,s_n)=G(t_1,...,t_m)$, for $F\not=G$ or $n\not=m$ failure
+3. $x=x$ delete
+4. $t=x$ but t is not variable, replace with $x=t$
+5. $x=t$, but $t$ not in $x$ but $x$ occurs in $t$, failure
+6. $x=t$, $t$ contains no $x$, but $x$ occurs in other equations, replace $x$ by $t$ with other equations
+
 If $s$ and $t$ are unifiable, they have a most general unifier. See pg 6 and onwards for examples.
 Normal form occurs for every LHS is a different variable and no LHS appears in any RHS.
 Allows for forms of automated inference with predicate logic<-**VERY COOL**, pg 15
+
 
 ## Examples:
 Tina found Rover and returned him to Anne:  
@@ -116,7 +129,6 @@ $\exists x(\text{House}(x) \land \text{Inhabits}(\text{lea}, x) \land \text{Buil
 
 Mothers’ mothers are grandmothers:  
 $\forall x \forall y \forall z((\text{Mother}(x, y) \land \text{Mother}(y, z)) \rightarrow \text{Grandmother}(x, z))$
-
 
 "The square of every integer is nonnegative":  
 $\forall x (x \in \mathbb{Z} \rightarrow (x \cdot x \geq 0))$

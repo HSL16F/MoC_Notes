@@ -56,5 +56,8 @@ Most statements are contingent. Substitution preserves validity and preserves lo
 ![[Pasted image 20241022224900.png]]
 
 
+## Examples:
+For propositional proofs, a very powerful tool to prove that something is true is to apply a proof by contradiction, for example
+![[Pasted image 20241103150554.png]]
 ## Review
 Implies, modus ponens and double turnstile

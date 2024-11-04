@@ -40,3 +40,6 @@ In general, English is used to describe many TM's, for example $M=$ on input $w$
 $\langle\cdot\rangle$ is used to describe some encoding, encodes it into a string for the Machine to read, everything from a graph, to polynomials, to an automaton etc. All discrete objects have a string representation
 
 DFA's and even empty DFA's are decidable, see [[Week 10]], lec 2, pg 10-13 for more info.
+
+### Countability
+For $\mathcal{M}$ is all turning machines, we find that it is countable, as $\{\langle M \rangle|M \text{ is a } TM\}\subseteq\Sigma^*$
